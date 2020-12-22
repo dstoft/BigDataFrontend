@@ -91,11 +91,11 @@
 		function handleWordAssociations(tweet){
 			//Sorting by negative and positive words
 			if(tweet.negativeWords.length > 0){
-				//Not an empty list:
+				//Tweet had negative words:
 				negativeWords.push(tweet.negativeWords)
 			}
 			if(tweet.positiveWords.length > 0){
-				//Not an empty list:
+				//Tweet had positive words:
 				positiveWords.push(tweet.positiveWords)
 			}		
 		}

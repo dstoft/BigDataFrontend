@@ -1,4 +1,4 @@
-//Plots the sentiments of tweets in comparrison with friend group sizes
+//Plots the sentiments of tweets in comparison with friend group sizes
 function plotSentiments(sentiments, container){
 	var graph = {
   		"$schema": "https://vega.github.io/schema/vega-lite/v4.json",
@@ -16,8 +16,8 @@ function plotSentiments(sentiments, container){
 			}
 		],
   		"encoding": {
-    			"x": {"field": "friendsCount", "type": "quantitative", "title": "Average number of friends", "aggregate": "average"},
-			"y": {"field": "sentimentScore", "type": "ordinal", "title": "Sentiment"},
+    			"y": {"field": "friendsCount", "type": "quantitative", "title": "Average number of friends", "aggregate": "average"},
+			"x": {"field": "sentimentScore", "type": "ordinal", "title": "Sentiment"},
   		}
 	}
   	vegaEmbed('#' + container, graph);

@@ -16,5 +16,4 @@ function plotSentimentsMentions(sentiments, container){
   		}
 	}
   	vegaEmbed('#' + container, graph);
-
 }
